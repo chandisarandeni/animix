@@ -35,7 +35,7 @@
     <title>Background Animations</title>
 
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/cursor.css" />
+    <link rel="stylesheet" href="/card-list.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
@@ -52,20 +52,20 @@
   <body>
     <div class="cursor"></div>
     <!-- Base Animation -- Mario -->
-    <div class="sky">
-      <h1 id="base-text" class="basic-text main-topic">
-        Background Animations
-      </h1>
-    </div>
+    <h1
+      id="base-text"
+      class="case-studies-header"
+      style="
+        font-size: 24;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      "
+    >
+      Background Animations
+    </h1>
+    <div class="sky"></div>
     <div class="ground">
-      <div class="skyblocks">
-        <img
-          class="brick"
-          src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/Bricks.gif"
-          height="70px;"
-        />
-      </div>
-
       <img
         class="bush"
         src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushSingle.gif"
@@ -87,7 +87,16 @@
     <!-- Base Animation -- Mario End -->
 
     <!-- GitHub Repo -->
-    <h3 class="git-repo">
+    <h3
+      class="case-studies-header"
+      style="
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      "
+    >
       GitHub Repository
       <a
         href="https://github.com/chandisarandeni/background-animations"
@@ -108,8 +117,5 @@
           console.error("Error fetching card list:", error);
         });
     </script>
-
-    <!-- cursor js import -->
-    <script src="/cursor.js"></script>
   </body>
 </html>
