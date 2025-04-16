@@ -32,7 +32,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Background Animatios</title>
+    <title>Background Animations</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
+      rel="stylesheet"
+    />
+    <style>
+      .brush {
+        z-index: -1;
+      }
+      #base-text {
+        z-index: 2;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="sky">
+      <h1 id="base-text" class="basic-text main-topic">Background Animations</h1>
+    </div>
+    <div class="ground">
+      <div class="skyblocks">
+        <img
+          class="brick"
+          src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/Bricks.gif"
+          height="70px;"
+        />
+      </div>
+
+      <img
+        class="bush"
+        src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushSingle.gif"
+        height="70px;"
+      />
+      <img
+        class="bush"
+        src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushDouble.gif"
+        height="70px;"
+      />
+      <img
+        class="bush"
+        src="https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/BushSingle.gif"
+        height="70px;"
+      />
+
+      <div class="mario"></div>
+    </div>
+  </body>
 </html>

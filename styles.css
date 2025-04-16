@@ -1,1 +1,130 @@
 /* This file contains the styling things in main file (index.html) */
+
+/* Common styling parts */
+.basic-text {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+/* Styling for the header */
+.main-topic {
+  text-align: center;
+  padding-top: 20px;
+  z-index: 2;
+}
+
+.sky,
+.ground {
+  position: sticky; /*Because we want to position items on and in them!*/
+}
+
+.sky {
+  height: 10%;
+  background-color: #548cff;
+}
+.ground {
+  height: 8%;
+  background-color: #c84c0c;
+  background-image: url("https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/groundblock.png");
+}
+.cloud {
+  position: absolute;
+  height: 100px;
+}
+
+.skyblocks {
+  position: absolute;
+  top: -250px;
+}
+.brick {
+  position: fixed;
+  margin: -2px;
+}
+.brick:nth-child(1) {
+  left: 600px;
+}
+.brick:nth-child(2) {
+  left: 670px;
+}
+.brick:nth-child(3) {
+  left: 740px;
+}
+.brick:nth-child(4) {
+  left: 810px;
+}
+
+.bush {
+  position: absolute;
+  top: -70px;
+}
+.bush:nth-child(1) {
+  left: 150px;
+}
+.bush:nth-child(2) {
+  left: 960px;
+}
+.bush:nth-child(3) {
+  left: 1200px;
+}
+
+.mario {
+  position: absolute;
+  width: 71px;
+  height: 72px;
+  background: url("https://raw.githubusercontent.com/LantareCode/random-this-and-thats/master/CSS/SuperMario-Animation/images/mariowalking/result.png")
+    left center;
+  top: -70px;
+  left: 0px;
+
+  -webkit-animation: play 0.8s steps(4) infinite, run 7s both infinite linear;
+
+  animation: play 0.8s steps(4) infinite, run 7s both infinite linear;
+}
+@-webkit-keyframes play {
+  100% {
+    background-position: -284px;
+  }
+}
+@keyframes play {
+  100% {
+    background-position: -284px;
+  }
+}
+@-webkit-keyframes run {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes run {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 100%;
+  }
+}
+@-webkit-keyframes wind {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes wind {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@media (max-width: 1042px) {
+  .bush {
+    display: none;
+  }
+}
