@@ -35,7 +35,7 @@
     <title>Background Animations</title>
 
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="/card-list.css" />
+    <link rel="stylesheet" href="/z-common/card-list/card-list.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
@@ -108,7 +108,7 @@
     <!-- Fetch the card List -->
     <div class="card-list"></div>
     <script>
-      fetch("/card-list.html")
+      fetch("/z-common/card-list/card-list.html")
         .then((response) => response.text())
         .then((data) => {
           document.querySelector(".card-list").innerHTML = data;
