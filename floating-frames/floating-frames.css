@@ -1,0 +1,132 @@
+/*
+
+Description:
+This CSS file defines the styles for a floating frames animation effect. 
+It includes a wrapper with a gradient background, a centered heading, 
+and multiple animated boxes that float and rotate with varying durations.
+
+Styles:
+- `body`: Resets margin and padding to zero for a clean layout.
+- `.wrapper`: Sets up a full-screen container with a gradient background and hidden overflow.
+- `h2`: Centers a heading element both vertically and horizontally with a bold, white font.
+- `.box div`: Defines the appearance and animation for each floating frame, including size, position, and border styling.
+
+Keyframes:
+- `@keyframes animate`: Defines the animation for the floating frames, including scaling, translation, rotation, and opacity changes.
+
+Animation Details:
+- Each `.box div` is positioned absolutely within the `.wrapper` and assigned a unique animation duration and starting position.
+- The animation creates a floating effect with scaling, rotation, and opacity transitions.
+
+Usage:
+- Include this CSS file in your HTML to create a visually appealing background animation with floating frames.
+*/
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(0, 34, 11), rgb(13, 121, 9));
+}
+
+h2 {
+  font-display: poppins;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.box div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 6px solid rgba(255, 255, 255, 0.8);
+}
+
+.box div:nth-child(1) {
+  top: 12%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(2) {
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+
+.box div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+
+.box div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+
+.box div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+
+.box div:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+
+.box div:nth-child(8) {
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+
+.box div:nth-child(9) {
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+
+.box div:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1) translateY(45px) rotate(180deg);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1.3) translateY(-90px) rotate(360deg);
+    opacity: 0.2;
+  }
+}
