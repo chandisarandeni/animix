@@ -1,3 +1,40 @@
+/* 
+
+Description:
+This CSS file defines styles for a wavy background animation with multiple layers of waves and a centered text overlay.
+
+Classes:
+1. .container:
+  - Positions the container absolutely to fill the viewport.
+  - Centers its content and hides overflow.
+
+2. .line:
+  - Defines a full-screen layer with a background color.
+  - Acts as a base for wave animations.
+
+3. .mid-text:
+  - Positions text in the center of the screen.
+  - Includes styles for the heading inside it.
+
+4. .line-one, .line-two, .line-three:
+  - Define different layers of the animation with varying z-index and opacity.
+
+5. .wave:
+  - Represents the wave animation layers.
+  - Positioned absolutely and styled for repeating wave patterns.
+
+6. .wave-one, .wave-two, .wave-three:
+  - Customize the wave layers with different background sizes and animations.
+  - .wave-two and .wave-three include animation for dynamic wave movement.
+
+Keyframes:
+- @keyframes animate:
+  - Defines the wave animation with a horizontal translation and vertical scaling effect.
+  - Animates from the initial position to a scaled and shifted state, then back to the original.
+
+Purpose:
+- Creates a visually appealing wavy background animation with layered effects and a centered text overlay.
+*/
 .container {
   position: absolute;
   left: 0;
@@ -13,7 +50,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: blueviolet;
+  background: rgb(119, 151, 255);
 }
 
 .mid-text {
