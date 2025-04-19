@@ -1,0 +1,64 @@
+<!-- 
+FILE: wavy-background.html
+DESCRIPTION: This HTML file creates a wavy background animation effect using multiple wave images layered within div elements. 
+       It includes a title and a central text element, styled with external CSS.
+
+STRUCTURE:
+- <html>: The root element of the document with language set to English.
+- <head>: Contains metadata and links to external resources.
+  - <meta charset="UTF-8">: Specifies the character encoding for the document.
+  - <meta name="viewport" content="width=device-width, initial-scale=1.0">: Ensures responsive design for different screen sizes.
+  - <title>: Sets the title of the webpage as "Wavy Background".
+  - <link rel="stylesheet" href="/wavy-background/wavy-background.css">: Links to the external CSS file for styling.
+
+- <body>: Contains the main content of the webpage.
+  - <div class="container">: A wrapper for all content on the page.
+  - <div class="mid-text">: Contains the central text element.
+    - <h2>: Displays the title "Wavy Background".
+  - <div class="line">: Represents a line containing a wave animation.
+    - <div class="wave">: A div styled with a background image of a wave.
+    - style="background-image: url(waves/1.png)": Inline style to set the wave image for the first wave.
+    - style="background-image: url(waves/2.png)": Inline style to set the wave image for the second wave.
+    - style="background-image: url(waves/3.png)": Inline style to set the wave image for the third wave.
+
+USAGE:
+- Ensure the external CSS file (wavy-background.css) is correctly linked and styled.
+- Place the wave images (1.png, 2.png, 3.png) in the "waves" directory relative to the HTML file.
+- Customize the wave images or text as needed for your project.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wavy Background</title>
+    <link rel="stylesheet" href="/wavy-background/wavy-background.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mid-text">
+        <h2>Wavy Background</h2>
+      </div>
+
+      <div class="line line-one">
+        <div
+          class="wave wave-one"
+          style="background-image: url(waves/1.png)"
+        ></div>
+      </div>
+
+      <div class="line line-two">
+        <div
+          class="wave wave-two"
+          style="background-image: url(waves/2.png)"
+        ></div>
+      </div>
+
+      <div class="line line-three">
+        <div
+          class="wave wave-three"
+          style="background-image: url(waves/3.png)"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>
