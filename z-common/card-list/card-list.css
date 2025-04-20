@@ -1205,6 +1205,13 @@ nav a.active::after {
   transition: filter var(--transition-medium);
 }
 
+.autoplay-video {
+  autoplay: true;
+  muted: true;
+  loop: true;
+  playsinline: true;
+}
+
 .case-study-card:hover .case-study-image {
   filter: grayscale(0%) contrast(1.1);
 }
