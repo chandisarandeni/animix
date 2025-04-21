@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+.center-screen {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+h2 {
+  margin: 4px;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+pre {
+  font-family: "Dancing Script", cursive;
+  margin: 4px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.slide-one {
+  background-image: url(https://res.cloudinary.com/dwbw83rrr/image/upload/v1745205873/sebastian-unrau-sp-p7uuT0tw-unsplash_edkemp.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide-two {
+  background-image: url(https://res.cloudinary.com/dwbw83rrr/image/upload/v1745205869/marita-kavelashvili-ugnrXk1129g-unsplash_fofiqn.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.slide-three {
+  background-image: url(https://res.cloudinary.com/dwbw83rrr/image/upload/v1745205863/lukasz-szmigiel-2ShvY8Lf6l0-unsplash_uch0tc.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
