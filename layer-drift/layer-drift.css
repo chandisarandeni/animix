@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background: #f0f0f0;
+}
+
+.bg-area {
+  position: fixed;
+  left: -50%;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  animation: animate 5s ease-in-out infinite alternate;
+  background: linear-gradient(90deg, #ffecd2 50%, #fcb69f -50%);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.layer-two {
+  animation-direction: alternate-reverse;
+  animation-duration: 3s;
+}
+
+.layer-three {
+  animation-duration: 5s;
+}
+
+.banner-text {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.banner-text h2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 55px;
+  letter-spacing: 5px;
+  color: #333;
+  margin: 0;
+}
+
+.banner-text h3 {
+  font-size: 30px;
+  margin: 0;
+  font-family: Courgatte;
+  color: #555;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
