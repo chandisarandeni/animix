@@ -1,0 +1,32 @@
+body {
+  background-image: url("https://res.cloudinary.com/dwbw83rrr/image/upload/v1745205869/marita-kavelashvili-ugnrXk1129g-unsplash_fofiqn.jpg");
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+
+  font-family: Poppins;
+  font-size: 300px;
+  font-weight: 900;
+
+  background-image: url("https://res.cloudinary.com/dwbw83rrr/image/upload/v1745205873/sebastian-unrau-sp-p7uuT0tw-unsplash_edkemp.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #000;
+
+  animation: animate 3s ease forwards;
+}
+
+@keyframes animate {
+  from {
+    background-position: center 25%;
+  }
+  to {
+    background-position: center 70%;
+  }
+}
