@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wrapper {
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  canvas {
+    display: block;
+  }
+  
