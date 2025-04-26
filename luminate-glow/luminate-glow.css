@@ -1,0 +1,28 @@
+body {
+  background: #111;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.text-wrapper {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 120px;
+  color: white;
+  position: relative;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    #00e0ff,
+    #ff4ecd,
+    #00e0ff
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  transition: background-position 0.1s;
+}
