@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper > div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: animate 20s infinite;
+  opacity: 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+h2 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  opacity: 1; /* Ensure it's visible initially */
+  animation: fadeIn 2s forwards;
+  animation-delay: 4s; /* Adjust delay for when you want it to appear */
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.image-1 {
+  background-image: url(https://res.cloudinary.com/dwbw83rrr/image/upload/v1745205873/sebastian-unrau-sp-p7uuT0tw-unsplash_edkemp.jpg);
+}
+.image-2 {
+  background-image: url(https://res.cloudinary.com/dwbw83rrr/image/upload/v1745205869/marita-kavelashvili-ugnrXk1129g-unsplash_fofiqn.jpg);
+}
+.image-3 {
+  background-image: url(https://res.cloudinary.com/dwbw83rrr/image/upload/v1745205863/lukasz-szmigiel-2ShvY8Lf6l0-unsplash_uch0tc.jpg);
+}
+.image-4 {
+  background-image: url(https://res.cloudinary.com/dwbw83rrr/image/upload/v1745205873/sebastian-unrau-sp-p7uuT0tw-unsplash_edkemp.jpg);
+}
+.image-5 {
+  background-image: url(https://res.cloudinary.com/dwbw83rrr/image/upload/v1745205863/lukasz-szmigiel-2ShvY8Lf6l0-unsplash_uch0tc.jpg);
+}
+
+.wrapper > div:nth-child(1) {
+  animation-delay: 0s;
+}
+.wrapper > div:nth-child(2) {
+  animation-delay: 4s;
+}
+.wrapper > div:nth-child(3) {
+  animation-delay: 8s;
+}
+.wrapper > div:nth-child(4) {
+  animation-delay: 12s;
+}
+.wrapper > div:nth-child(5) {
+  animation-delay: 16s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  30% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+}
