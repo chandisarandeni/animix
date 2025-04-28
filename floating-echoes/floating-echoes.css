@@ -1,0 +1,152 @@
+body {
+  background: #111;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.wrapper span {
+  position: fixed;
+  bottom: -180px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(-135deg, #b38dc8, #8fdeea);
+  animation: animate 10s linear infinite;
+}
+
+/* Fixed typo: 'wrappper' → 'wrapper' */
+.wrapper span:nth-child(1) {
+  left: 60px;
+  animation-delay: 0.6s;
+  width: 15px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.wrapper span:nth-child(2) {
+  left: 10%;
+  animation-delay: 3s;
+  width: 15px;
+  height: 60px;
+  border-radius: 60px;
+}
+
+.wrapper span:nth-child(3) {
+  left: 20%;
+  animation-delay: 2s;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+
+.wrapper span:nth-child(4) {
+  left: 30%;
+  animation-delay: 5s;
+  width: 80px;
+  height: 80px;
+}
+
+.wrapper span:nth-child(5) {
+  left: 40%;
+  animation-delay: 1s;
+  width: 15px;
+  height: 90px;
+  border-radius: 50px;
+}
+
+.wrapper span:nth-child(6) {
+  left: 50%;
+  animation-delay: 7s;
+}
+
+.wrapper span:nth-child(7) {
+  left: 60%;
+  animation-delay: 6s;
+  width: 15px;
+  height: 30px;
+  border-radius: 50px;
+}
+
+.wrapper span:nth-child(8) {
+  left: 70%;
+  animation-delay: 8s;
+}
+
+.wrapper span:nth-child(9) {
+  left: 80%;
+  animation-delay: 6s;
+  width: 15px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.wrapper span:nth-child(10) {
+  left: 90%;
+  animation-delay: 4s;
+}
+
+.wrapper span:nth-child(11) {
+  left: 95%;
+  animation-delay: 7.5s;
+  width: 15px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.wrapper span:nth-child(12) {
+  left: 45%;
+  animation-delay: 12s;
+}
+
+.wrapper span:nth-child(13) {
+  left: 65%;
+  animation-delay: 11.5s;
+  width: 15px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.wrapper span:nth-child(14) {
+  left: 35%;
+  animation-delay: 9.5s;
+}
+
+.wrapper span:nth-child(15) {
+  left: 88%;
+  animation-delay: 2.5s;
+  width: 15px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content h2 b {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 80px;
+  text-transform: uppercase;
+  letter-spacing: 16px;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
