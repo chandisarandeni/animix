@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+body {
+  background: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+}
+
+.magnet {
+  font-size: 3rem;
+  color: #fff;
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+  display: inline-block;
+  will-change: transform;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
