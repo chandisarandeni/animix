@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  font-family: "Orbitron", sans-serif;
+  background: black;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #1a0000 0%, #000 100%);
+  background-size: 200% 200%;
+  animation: bgPulse 10s infinite;
+  z-index: -2;
+}
+
+.glitch-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.glitch {
+  font-size: 5rem;
+  color: #ff1a1a;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  animation: flicker 2s infinite;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  color: #ff1a1a;
+  z-index: -1;
+}
+
+.glitch::before {
+  top: -2px;
+  text-shadow: -2px 0 red;
+  animation: glitchTop 2s infinite linear;
+}
+
+.glitch::after {
+  top: 2px;
+  text-shadow: 2px 0 darkred;
+  animation: glitchBottom 2s infinite linear;
+}
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  24%,
+  55% {
+    opacity: 0.3;
+  }
+}
+
+@keyframes glitchTop {
+  0% {
+    clip: rect(0, 9999px, 0, 0);
+    transform: translateX(0);
+  }
+  10% {
+    clip: rect(0, 9999px, 50px, 0);
+    transform: translateX(-5px);
+  }
+  20% {
+    clip: rect(0, 9999px, 0, 0);
+    transform: translateX(3px);
+  }
+  30% {
+    clip: rect(0, 9999px, 60px, 0);
+    transform: translateX(-2px);
+  }
+  100% {
+    clip: rect(0, 9999px, 0, 0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes glitchBottom {
+  0% {
+    clip: rect(0, 9999px, 0, 0);
+    transform: translateX(0);
+  }
+  10% {
+    clip: rect(40px, 9999px, 80px, 0);
+    transform: translateX(4px);
+  }
+  20% {
+    clip: rect(0, 9999px, 0, 0);
+    transform: translateX(-3px);
+  }
+  30% {
+    clip: rect(50px, 9999px, 90px, 0);
+    transform: translateX(2px);
+  }
+  100% {
+    clip: rect(0, 9999px, 0, 0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes bgPulse {
+  0%,
+  100% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+}
