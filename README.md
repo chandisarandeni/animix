@@ -1,4 +1,4 @@
-# Background Animations
+# Animix
 
 This website showcases a variety of background animations made with **CSS** and **JavaScript**.
 
