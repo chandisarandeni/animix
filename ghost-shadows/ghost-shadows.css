@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+  font-family: sans-serif;
+}
+
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(ellipse at center, #111 0%, #000 100%);
+  overflow: hidden;
+}
+
+/* Fog */
+.fog-layer {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: repeating-radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 5px
+  );
+  animation: fogMove 60s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+}
+
+@keyframes fogMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-25%, -25%);
+  }
+}
+
+/* Ghosts using the 👻 emoji */
+.ghost {
+  position: absolute;
+  font-size: 5rem; /* Large emoji */
+  color: white;
+  opacity: 0;
+  z-index: 3;
+  filter: blur(3px);
+  pointer-events: none;
+  animation: ghostMove 20s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Ghost movement animation */
+@keyframes ghostMove {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(1);
+  }
+  30% {
+    opacity: 0.3;
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translate(-50px, -60px) scale(1.2);
+  }
+  70% {
+    opacity: 0.3;
+    transform: translate(30px, 20px) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Particles */
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+  animation: driftParticles 100s linear infinite;
+  z-index: 0;
+}
+
+@keyframes driftParticles {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Light Flicker */
+.light-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.05) 0%,
+    transparent 60%
+  );
+  animation: flicker 3s infinite;
+  z-index: 2;
+  pointer-events: none;
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
