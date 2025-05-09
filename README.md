@@ -12,3 +12,33 @@
 2. Click the **`View Code`** button to see the code for any animation you like.
 3. Use the **`View Animation`** button to preview the animation clearly.
 4. Download the code and integrate it into your project.
+
+---
+
+## 📁 Project File Structure
+
+- **`animation01/`**  
+  Contains the code for the first animation (e.g., `floating-bubbles`).
+
+- **`animation02/`**  
+  Contains the code for the second animation (e.g., `neon-drift`).
+
+- **`z-common/`**  
+  Contains shared components used by multiple animations:
+  - **`cards/`**: Reusable card components.
+  - **`footer/`**: Shared footer elements.
+
+- **`index.html`**  
+  The main landing page for the website, which demonstrates all available animations.
+
+- **`styles.css`**  
+  Global styles for the layout and base UI elements.
+
+- **`README.md`**  
+  This file! Contains project overview and usage instructions.
+
+---
+
+## 📚 Contributing
+
+We welcome contributions! If you'd like to contribute, feel free to submit a pull request.
